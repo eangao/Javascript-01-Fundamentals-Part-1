@@ -189,24 +189,62 @@ m tall.
 ////////////////////////////////////////
 // Taking Decisions: if / else Statements
 ///////////////////////////////////////
-const age = 15;
+// const age = 15;
 
-if (age >= 18) {
-  console.log("Elmar can start driving license 🚗"); //click windows + . to add emoj
+// if (age >= 18) {
+//   console.log("Elmar can start driving license 🚗"); //click windows + . to add emoj
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(
+// `Sorry Elmar, you need ${yearsLeft} more years before your driving license 🚗.`
+//   );
+// }
+
+// const birthYear = 2012;
+
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+
+// console.log(century);
+
+////////////////////////////////////////
+// JavaScript Fundamentals – Part 1
+// Coding Exercise 2: CHALLENGE #2
+////////////////////////////////////////
+
+// Coding Challenge #2
+// Use the BMI example from Challenge #1, and the code you already wrote, and
+// improve it.
+// Your tasks:
+// 1. Print a nice output to the console, saying who has the higher BMI. The message
+// is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+// BMI (28.3) is higher than John's (23.9)!"
+// Hint: Use an if/else statement �
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+/* Write your code below. Good luck! 🙂 */
+
+if (BMIMark > BMIJohn) {
+  console.log("Mark's BMI is higher than John's!");
 } else {
-  const yearsLeft = 18 - age;
-  console.log(
-    `Sorry Elmar, you need ${yearsLeft} more years before your driving license 🚗.`
-  );
+  console.log("John's BMI is higher than Mark's!");
 }
 
-const birthYear = 2012;
-
-let century;
-if (birthYear <= 2000) {
-  century = 20;
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 } else {
-  century = 21;
+  console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
-
-console.log(century);
