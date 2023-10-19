@@ -42,7 +42,7 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
-*/
+
 
 // Mutable - can be change
 let age = 30;
@@ -64,3 +64,38 @@ job = "Teacher";
 // without really declaring it.
 lastName = "Angao";
 console.log(lastName);
+*/
+
+////////////////////////////////////////
+// OPERATOR
+///////////////////////////////////////
+
+// Math Operator
+const now = 2037;
+const ageElmar = now - 1985;
+const ageSarah = now - 2018;
+console.log(ageElmar, ageSarah);
+
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+console.log(ageElmar * 2, ageElmar / 10, 2 ** 3);
+
+const firstName = "Elmar";
+const lastName = "Angao";
+console.log(firstName + " " + lastName);
+
+// Assignment Operator
+let x = 10 + 5; // 15
+x += 10; // x = x + 10  = 25
+x *= 4; //x = x * 4 = 100
+x++; // x = x + 1
+x--; // x = x - 1
+x--; // x = x - 1
+console.log(x);
+
+// Comparison operator
+console.log(ageElmar > ageSarah); // >, <, >=, <=
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
