@@ -160,29 +160,53 @@ m tall.
 ////////////////////////////////////////
 // Strings and Template Literals
 ///////////////////////////////////////
+// const firstName = "Elmar";
+// const job = "teacher";
+// const birthYear = 1991;
+// const year = 2037;
 
-const firstName = "Elmar";
-const job = "teacher";
-const birthYear = 1991;
-const year = 2037;
+// const elmar =
+//   "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+// console.log(elmar);
 
-const elmar =
-  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
-console.log(elmar);
+// // template literals - use backtext ``
+// const elmarNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log(elmarNew);
 
-// template literals - use backtext ``
-const elmarNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(elmarNew);
+// console.log(`Just a regular string...`);
 
-console.log(`Just a regular string...`);
+// // Multiple string
+// console.log(
+//   "String with \n\
+// multiple \n\
+// lines"
+// );
 
-// Multiple string
-console.log(
-  "String with \n\
-multiple \n\
-lines"
-);
+// console.log(`String
+// multiple
+// lines`);
 
-console.log(`String
-multiple
-lines`);
+////////////////////////////////////////
+// Taking Decisions: if / else Statements
+///////////////////////////////////////
+const age = 15;
+
+if (age >= 18) {
+  console.log("Elmar can start driving license 🚗"); //click windows + . to add emoj
+} else {
+  const yearsLeft = 18 - age;
+  console.log(
+    `Sorry Elmar, you need ${yearsLeft} more years before your driving license 🚗.`
+  );
+}
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
