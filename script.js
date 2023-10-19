@@ -255,20 +255,59 @@ m tall.
 
 // Type Conversion
 // In programming, type conversion refers to changing one data type into another. It can be explicit (forced by programmer), or implicit (done automatically
-const inputYear = "1991";
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 18);
+// const inputYear = "1991";
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
 
-console.log(Number("Elmar"));
-console.log(typeof NaN); //invalid number
+// console.log(Number("Elmar"));
+// console.log(typeof NaN); //invalid number
 
-console.log(String(23), 23);
+// console.log(String(23), 23);
 
-// Type Coercion
-console.log("I am " + 23 + " years old");
-console.log("23" - "10" - 3);
-console.log("23" * "2");
+// // Type Coercion
+// console.log("I am " + 23 + " years old");
+// console.log("23" - "10" - 3);
+// console.log("23" * "2");
 
-let n = "1" + 1; // '11'
-n = n - 1; // 11 - 1 = 10
-console.log(n);
+// let n = "1" + 1; // '11'
+// n = n - 1; // 11 - 1 = 10
+// console.log(n);
+
+////////////////////////////////////////
+// Truthy and Falsy Values
+////////////////////////////////////////
+//  5 falsy values: 0, '', undefined, null, NaN
+// Everything else is truthy value
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Elmar"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+// But when exactly does JavaScript do type coercion
+// to booleans?
+// Well, it happens in two scenarios.
+// First, when using logical operators, and second in
+// a logical context, like for example,
+// in the condition of an if else statement.
+
+const money = 110;
+if (money) {
+  console.log("Don't spend it all");
+} else {
+  console.log("You should get a job!");
+}
+
+// another use case for this truthy and falsy values is
+// to check if a variable is actually defined or not.
+// And this might seem like a weird use case
+// but you will see later in the course that it actually makes
+// a lot of sense sometimes to test
+// if something actually exists or not.
+
+let height = 0;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("OOPS! Height is UNDEFINED");
+}
