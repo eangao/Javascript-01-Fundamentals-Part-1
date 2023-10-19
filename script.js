@@ -278,36 +278,110 @@ m tall.
 ////////////////////////////////////////
 //  5 falsy values: 0, '', undefined, null, NaN
 // Everything else is truthy value
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean("Elmar"));
-console.log(Boolean({}));
-console.log(Boolean(""));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Elmar"));
+// console.log(Boolean({}));
+// console.log(Boolean(""));
 
-// But when exactly does JavaScript do type coercion
-// to booleans?
-// Well, it happens in two scenarios.
-// First, when using logical operators, and second in
-// a logical context, like for example,
-// in the condition of an if else statement.
+// // But when exactly does JavaScript do type coercion
+// // to booleans?
+// // Well, it happens in two scenarios.
+// // First, when using logical operators, and second in
+// // a logical context, like for example,
+// // in the condition of an if else statement.
 
-const money = 110;
-if (money) {
-  console.log("Don't spend it all");
+// const money = 110;
+// if (money) {
+//   console.log("Don't spend it all");
+// } else {
+//   console.log("You should get a job!");
+// }
+
+// // another use case for this truthy and falsy values is
+// // to check if a variable is actually defined or not.
+// // And this might seem like a weird use case
+// // but you will see later in the course that it actually makes
+// // a lot of sense sometimes to test
+// // if something actually exists or not.
+
+// let height = 0;
+// if (height) {
+//   console.log("YAY! Height is defined");
+// } else {
+//   console.log("OOPS! Height is UNDEFINED");
+// }
+
+////////////////////////////////////////
+// Equality Operators: == vs. ===
+////////////////////////////////////////
+const age = "18";
+if (age === 18) console.log("You just became an adult :D (strict) ");
+
+// Now, besides this triple equal,
+// we also have a double equal.
+// So the difference is
+// that this one here with the three equals
+// is called the strict equality operator.
+// It's strict,
+// because it does not perform type coercion.
+// And so it only returns
+// to when both values are exactly the same.
+
+// ==  the double equal does type coercion.
+// 18 === 18;
+// true;
+
+// 18 === 19
+// false
+
+// === the triple equals does not perform type coercion.
+// "18" == 18;
+// true;
+
+// if (age == 18) console.log("You just became an adult :D (loose) ");
+
+// So as a general rule for clean code,
+// avoid the loose equality operator
+// as much as you can.
+// So when comparing values,
+// always use strict equality
+// with the three equal signs,
+// This is something
+// that actually most JavaScript developers advise you to do.
+// So it's a good rule for sure.
+// Even if we actually need type conversion.
+// In that case,
+// it's better to convert the value manually
+// before the comparison
+// than relying on the double equal operator.
+// Some always default to the triple equal operator
+// and pretend that ==  doesn't even exist. Okay?
+
+// const favourite = prompt("What's your favourite number?");
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite == 23) {// '23' == 23
+//   console.log("Cool! 23 is an amazing number!");
+// }
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  // 23 === 23
+  console.log("Cool! 23 is an amazing number!");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number!");
+} else if (favourite === 9) {
+  console.log("9 is also a cool number!");
 } else {
-  console.log("You should get a job!");
+  console.log("Number is not 23 or 7");
 }
 
-// another use case for this truthy and falsy values is
-// to check if a variable is actually defined or not.
-// And this might seem like a weird use case
-// but you will see later in the course that it actually makes
-// a lot of sense sometimes to test
-// if something actually exists or not.
-
-let height = 0;
-if (height) {
-  console.log("YAY! Height is defined");
-} else {
-  console.log("OOPS! Height is UNDEFINED");
+// != loose version;    !== strict version
+if (favourite !== 23) {
+  console.log("Not 23");
 }
