@@ -366,22 +366,27 @@ if (age === 18) console.log("You just became an adult :D (strict) ");
 //   console.log("Cool! 23 is an amazing number!");
 // }
 
-const favourite = Number(prompt("What's your favourite number?"));
-console.log(favourite);
-console.log(typeof favourite);
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
 
-if (favourite === 23) {
-  // 23 === 23
-  console.log("Cool! 23 is an amazing number!");
-} else if (favourite === 7) {
-  console.log("7 is also a cool number!");
-} else if (favourite === 9) {
-  console.log("9 is also a cool number!");
-} else {
-  console.log("Number is not 23 or 7");
-}
+// if (favourite === 23) {
+//   // 23 === 23
+//   console.log("Cool! 23 is an amazing number!");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool number!");
+// } else if (favourite === 9) {
+//   console.log("9 is also a cool number!");
+// } else {
+//   console.log("Number is not 23 or 7");
+// }
 
-// != loose version;    !== strict version
-if (favourite !== 23) {
-  console.log("Not 23");
-}
+// // != loose version;    !== strict version
+// if (favourite !== 23) {
+//   console.log("Not 23");
+// }
+
+////////////////////////////////////////
+// Boolean Logic
+////////////////////////////////////////
+// See pdf lecture
