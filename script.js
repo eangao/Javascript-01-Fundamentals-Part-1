@@ -314,9 +314,9 @@ m tall.
 
 ////////////////////////////////////////
 // Equality Operators: == vs. ===
-////////////////////////////////////////
-const age = "18";
-if (age === 18) console.log("You just became an adult :D (strict) ");
+// ////////////////////////////////////////
+// const age = "18";
+// if (age === 18) console.log("You just became an adult :D (strict) ");
 
 // Now, besides this triple equal,
 // we also have a double equal.
@@ -390,3 +390,30 @@ if (age === 18) console.log("You just became an adult :D (strict) ");
 // Boolean Logic
 ////////////////////////////////////////
 // See pdf lecture
+
+////////////////////////////////////////
+// Logical Operators
+////////////////////////////////////////
+
+const hasDriverLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+// const shouldDrive = hasDriverLicense && hasGoodVision;
+// if (shouldDrive) {
+//   console.log("Sarrah is able to deive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = true; //C
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if (hasDriverLicense && hasGoodVision && !isTired) {
+  console.log("Sarrah is able to deive!");
+} else {
+  console.log("Someone else should drive...");
+}
