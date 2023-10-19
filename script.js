@@ -21,7 +21,7 @@ let myFirstJob = "Coder";
 let myCurrentJob = "Teacher";
 
 console.log(myFirstJob);
-*/
+
 
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -42,3 +42,25 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
+*/
+
+// Mutable - can be change
+let age = 30;
+age = 31;
+
+// Imutable - cannot be change
+const birthYear = 1991;
+// birthYear = 1990;
+
+// cannot be initialize
+// const job;
+
+//Old way to defining a variable prior to ES6
+var job = "Programmer";
+job = "Teacher";
+
+// YOu should not that you should always properly declare variables, okay?
+// Never just write a variable like this
+// without really declaring it.
+lastName = "Angao";
+console.log(lastName);
