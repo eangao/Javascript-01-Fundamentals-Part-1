@@ -64,7 +64,7 @@ job = "Teacher";
 // without really declaring it.
 lastName = "Angao";
 console.log(lastName);
-*/
+
 
 ////////////////////////////////////////
 // OPERATOR
@@ -99,3 +99,21 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+*/
+
+////////////////////////////////////////
+// Operator Precedence
+///////////////////////////////////////
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+const now = 2037;
+const ageElmar = now - 1985;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10 -  right to left
+console.log(x, y);
+
+const averageAge = (ageElmar + ageSarah) / 2;
+console.log(ageElmar, ageSarah, averageAge);
