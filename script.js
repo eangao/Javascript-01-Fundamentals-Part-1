@@ -226,25 +226,49 @@ m tall.
 // BMI (28.3) is higher than John's (23.9)!"
 // Hint: Use an if/else statement �
 
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const BMIMark = massMark / (heightMark * heightMark);
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+// const BMIMark = massMark / (heightMark * heightMark);
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(BMIMark, BMIJohn);
 
-/* Write your code below. Good luck! 🙂 */
+// /* Write your code below. Good luck! 🙂 */
 
-if (BMIMark > BMIJohn) {
-  console.log("Mark's BMI is higher than John's!");
-} else {
-  console.log("John's BMI is higher than Mark's!");
-}
+// if (BMIMark > BMIJohn) {
+//   console.log("Mark's BMI is higher than John's!");
+// } else {
+//   console.log("John's BMI is higher than Mark's!");
+// }
 
-if (BMIMark > BMIJohn) {
-  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
-} else {
-  console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
-}
+// if (BMIMark > BMIJohn) {
+//   console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+// } else {
+//   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+// }
+
+////////////////////////////////////////
+// Type Conversion and Coercion
+////////////////////////////////////////
+
+// Type Conversion
+// In programming, type conversion refers to changing one data type into another. It can be explicit (forced by programmer), or implicit (done automatically
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Elmar"));
+console.log(typeof NaN); //invalid number
+
+console.log(String(23), 23);
+
+// Type Coercion
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" * "2");
+
+let n = "1" + 1; // '11'
+n = n - 1; // 11 - 1 = 10
+console.log(n);
