@@ -460,7 +460,7 @@ m tall.
 // The switch Statement
 ////////////////////////////////////////
 
-const day = "monday";
+// const day = "monday";
 
 // without the break,
 // the code simply continues executing
@@ -489,18 +489,39 @@ const day = "monday";
 //     console.log("Not a valid day!");
 // }
 
-// if else
-if (day === "monday") {
-  console.log("Plan course structure");
-  console.log("Go to coding meetup");
-} else if (day === "tuesday") {
-  console.log("Prepare theory videos");
-} else if (day === "wednesday" || day === "thursday") {
-  console.log("Write code examples");
-} else if (day === "friday") {
-  console.log("Record videos");
-} else if (day === "saturday" || day === "sunday") {
-  console.log("Enjoy the weekend :D");
-} else {
-  console.log("Not a valid day!");
+// if else statement
+// if (day === "monday") {
+//   console.log("Plan course structure");
+//   console.log("Go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("Prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("Write code examples");
+// } else if (day === "friday") {
+//   console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("Enjoy the weekend :D");
+// } else {
+//   console.log("Not a valid day!");
+// }
+
+////////////////////////////////////////
+// Statements and Expressions
+////////////////////////////////////////
+//
+
+// expressions
+3 + 4;
+1991;
+true && false && !false;
+
+// statements
+if (23 > 20) {
+  const str = "23 is bigger";
 }
+
+// So my main goal with this lecture is really
+// that you know that statements and expressions exist,
+// and that expressions produce values,
+// and that statements are like full sentences
+// that translate our actions.
