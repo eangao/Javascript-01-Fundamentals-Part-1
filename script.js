@@ -510,18 +510,57 @@ m tall.
 ////////////////////////////////////////
 //
 
-// expressions
-3 + 4;
-1991;
-true && false && !false;
+// // expressions
+// 3 + 4;
+// 1991;
+// true && false && !false;
 
-// statements
-if (23 > 20) {
-  const str = "23 is bigger";
+// // statements
+// if (23 > 20) {
+//   const str = "23 is bigger";
+// }
+
+// // So my main goal with this lecture is really
+// // that you know that statements and expressions exist,
+// // and that expressions produce values,
+// // and that statements are like full sentences
+// // that translate our actions.
+
+////////////////////////////////////////
+// The Conditional (Ternary) Operator
+////////////////////////////////////////
+const age = 2;
+// age >= 18
+//   ? console.log("I like to drink wine 🍷")
+//   : console.log("I like to drink water 💧");
+
+// And remember that an operator always produces a value.
+// So in other words an operator is an expression, right.
+
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
+
+let drink2;
+
+if (age >= 18) {
+  drink2 = "wine 🍷";
+} else {
+  drink2 = "water 💧";
 }
 
-// So my main goal with this lecture is really
-// that you know that statements and expressions exist,
-// and that expressions produce values,
-// and that statements are like full sentences
-// that translate our actions.
+console.log(drink2);
+
+// But using the ternary operator, which produces a value,
+// we can actually have conditionals
+// inside of a template literal.
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"} `);
+
+// Now to finish, I just wanted to mention
+// that the ternary operator is not thought as a replacement
+// of if/else statements.
+// We still need if/else all the time.
+// For example when we have bigger blocks of code
+// that we need to execute based on a condition.
+// In that case the ternary operator is not gonna work.
+// But the ternary operator is perfect
+// when we just need to take a quick decision,
