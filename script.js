@@ -419,6 +419,7 @@ m tall.
 // }
 
 ////////////////////////////////////////
+// JavaScript Fundamentals – Part 1
 // Coding Exercise 3: CHALLENGE #3
 ////////////////////////////////////////
 // Coding Challenge #3
@@ -528,39 +529,72 @@ m tall.
 
 ////////////////////////////////////////
 // The Conditional (Ternary) Operator
+// ////////////////////////////////////////
+// const age = 2;
+// // age >= 18
+// //   ? console.log("I like to drink wine 🍷")
+// //   : console.log("I like to drink water 💧");
+
+// // And remember that an operator always produces a value.
+// // So in other words an operator is an expression, right.
+
+// const drink = age >= 18 ? "wine 🍷" : "water 💧";
+// console.log(drink);
+
+// let drink2;
+
+// if (age >= 18) {
+//   drink2 = "wine 🍷";
+// } else {
+//   drink2 = "water 💧";
+// }
+
+// console.log(drink2);
+
+// // But using the ternary operator, which produces a value,
+// // we can actually have conditionals
+// // inside of a template literal.
+// console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"} `);
+
+// // Now to finish, I just wanted to mention
+// // that the ternary operator is not thought as a replacement
+// // of if/else statements.
+// // We still need if/else all the time.
+// // For example when we have bigger blocks of code
+// // that we need to execute based on a condition.
+// // In that case the ternary operator is not gonna work.
+// // But the ternary operator is perfect
+// // when we just need to take a quick decision,
+
 ////////////////////////////////////////
-const age = 2;
-// age >= 18
-//   ? console.log("I like to drink wine 🍷")
-//   : console.log("I like to drink water 💧");
+// JavaScript Fundamentals – Part 1
+// Coding Exercise 4: CHALLENGE #4
+////////////////////////////////////////
+// Coding Challenge #4
+// Steven wants to build a very simple tip calculator for whenever he goes eating in a
+// restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and
+// 300. If the value is different, the tip is 20%.
 
-// And remember that an operator always produces a value.
-// So in other words an operator is an expression, right.
+// Your tasks:
+// 1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for
+// this. It's not allowed to use an if/else statement � (If it's easier for you, you can
+// start with an if/else statement, and then try to convert it to a ternary
+// operator!)
+// 2. Print a string to the console containing the bill value, the tip, and the final value
+// (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value
+// 316.25”
 
-const drink = age >= 18 ? "wine 🍷" : "water 💧";
-console.log(drink);
+// Test data:
+// § Data 1: Test for bill values 275, 40 and 430
 
-let drink2;
+// Hints:
+// § To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+// § Value X is between 50 and 300, if it's >= 50 && <= 300 �
+// GOOD LUCK �
 
-if (age >= 18) {
-  drink2 = "wine 🍷";
-} else {
-  drink2 = "water 💧";
-}
+const bill = 430;
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-console.log(drink2);
-
-// But using the ternary operator, which produces a value,
-// we can actually have conditionals
-// inside of a template literal.
-console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"} `);
-
-// Now to finish, I just wanted to mention
-// that the ternary operator is not thought as a replacement
-// of if/else statements.
-// We still need if/else all the time.
-// For example when we have bigger blocks of code
-// that we need to execute based on a condition.
-// In that case the ternary operator is not gonna work.
-// But the ternary operator is perfect
-// when we just need to take a quick decision,
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}.`
+);
